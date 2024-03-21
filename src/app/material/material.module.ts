@@ -5,6 +5,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -13,6 +14,7 @@ const MaterialComponents = [
   MatBadgeModule,//Notificaciones
   MatProgressSpinnerModule,//Barra de progreso - Cargando
   MatToolbarModule,//Navbar
+  MatSidenavModule,
 
 ]
 

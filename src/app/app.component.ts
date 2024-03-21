@@ -10,7 +10,13 @@ export class AppComponent {
 
   notificaciones= 2;
 
+  opened = false;
+
   showSpinner = false;
+
+  log(state: any){
+    console.log(state);
+  }
 
   loadData(){
     this.showSpinner = true;
