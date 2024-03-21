@@ -1,12 +1,14 @@
-<h1>Boton</h1>
 <div class="container mt-5">
+  <h1>Boton</h1>
+</div>
+<div class="container">
 <button mat-button>Click me!</button>
 <button mat-raised-button>Click me!</button>
 <button mat-flat-button>Click me!</button>
 <button mat-stroked-button>Click me!</button>
 </div>
 
-<div class="container mt-5">
+<div class="container">
   <div class="row">
     <div class="col">
       <button mat-icon-button>Icon</button>
@@ -19,15 +21,30 @@
   </div>
 </div>
 
-<div class="container mt-5">
+<div class="container">
       <button color="primary" mat-button>Primary</button>
       <button color="accent" mat-button>Accent</button>
       <button color="warn" disableRipple mat-button>Warn</button>
 </div>
 
-<div class="container mt-5">
+<div class="container">
       <button color="primary" mat-raised-button>Primary</button>
       <button color="accent" mat-raised-button>Accent</button>
       <button color="warn" mat-raised-button>Warn</button>
+</div>
+<br><br>
+<h1>Button Toggle</h1>
+<div class="container">
+  <mat-button-toggle #toggleBtn checked disableRipple disabled>Toggle</mat-button-toggle><br>
+  {{toggleBtn.checked}}
+</div>
+<br>
+<div class="container">
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group><br>
+  {{toggleGroup.value}}
 </div>
 
