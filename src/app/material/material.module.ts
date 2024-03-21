@@ -4,13 +4,16 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 const MaterialComponents = [
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatIconModule,
-  MatBadgeModule,
-  MatProgressSpinnerModule
+  MatButtonModule,//Botones
+  MatButtonToggleModule,//Grupo de botones - botones anidados
+  MatIconModule,//Iconos
+  MatBadgeModule,//Notificaciones
+  MatProgressSpinnerModule,//Barra de progreso - Cargando
+  MatToolbarModule,//Navbar
+
 ]
 
 @NgModule({
