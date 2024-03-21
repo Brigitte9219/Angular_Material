@@ -9,4 +9,13 @@ export class AppComponent {
   title = 'AngularMaterial';
 
   notificaciones= 2;
+
+  showSpinner = false;
+
+  loadData(){
+    this.showSpinner = true;
+    setTimeout(() =>{
+      this.showSpinner = false;
+    }, 5000);
+  }
 }
