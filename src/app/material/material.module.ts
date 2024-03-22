@@ -12,6 +12,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -27,6 +28,7 @@ const MaterialComponents = [
   MatGridListModule,//Cuadricula - Filas y columnas
   MatExpansionModule,//Expansión del panel
   MatCardModule,//Tarjetas
+  MatTabsModule,//Pestañas
 ]
 
 @NgModule({

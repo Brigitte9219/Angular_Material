@@ -24,4 +24,8 @@ export class AppComponent {
       this.showSpinner = false;
     }, 5000);
   }
+
+  logChange(index: any){
+    console.log(index);
+  }
 }

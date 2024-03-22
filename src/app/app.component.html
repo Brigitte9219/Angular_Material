@@ -1,4 +1,16 @@
 <div class="container mt-5">
+  <h1>Tabs - Pestañas</h1>
+
+  <mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
+    <mat-tab label="Angular">Angular content</mat-tab>
+    <mat-tab label="React">React content</mat-tab>
+    <mat-tab label="Vue">Vue content</mat-tab>
+  </mat-tab-group>
+  {{tabRef.selectedIndex}}
+</div>
+
+<!------------------------------------------------------------------->
+<div class="container mt-5">
   <h1>Cards - Tarjetas</h1>
   <mat-card>
     <mat-card-title>Card title</mat-card-title>
