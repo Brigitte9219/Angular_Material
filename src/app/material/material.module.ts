@@ -17,6 +17,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -36,7 +37,8 @@ const MaterialComponents = [
   MatStepperModule,//Descripción de un paso a paso
   MatFormFieldModule,//Construir formularios
   MatInputModule,//Construir campos de entrada
-  MatSelectModule,//Elementos de selección de formularios
+  MatSelectModule,//Elementos de selección de formularios - Lista desplegable y/o con checkbox
+  MatAutocompleteModule,//
 ]
 
 @NgModule({

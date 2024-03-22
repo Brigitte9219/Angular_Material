@@ -1,4 +1,19 @@
 <div class="container mt-5">
+  <h1>Autocomplete</h1>
+<form>
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" [formControl]="myControl">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+</div>
+
+<!------------------------------------------------------------------->
+<div class="container mt-5">
   <h1>Select - Elementos de selección de formularios</h1>
   <h1>Lista desplegable y/o con checkbox (multiple)</h1>
   <mat-form-field>
