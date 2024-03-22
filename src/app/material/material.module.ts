@@ -19,6 +19,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -40,7 +41,8 @@ const MaterialComponents = [
   MatInputModule,//Construir campos de entrada
   MatSelectModule,//Elementos de selección de formularios - Lista desplegable y/o con checkbox
   MatAutocompleteModule,//Autocompletar - filtro por búsqueda
-  MatCheckboxModule,//
+  MatCheckboxModule,//Checkbox - cajas de texto
+  MatRadioModule,//radio botones
 ]
 
 @NgModule({
