@@ -38,7 +38,7 @@ const MaterialComponents = [
   MatFormFieldModule,//Construir formularios
   MatInputModule,//Construir campos de entrada
   MatSelectModule,//Elementos de selección de formularios - Lista desplegable y/o con checkbox
-  MatAutocompleteModule,//
+  MatAutocompleteModule,//Autocompletar - filtro por búsqueda
 ]
 
 @NgModule({
