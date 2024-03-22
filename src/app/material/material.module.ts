@@ -16,6 +16,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -35,6 +36,7 @@ const MaterialComponents = [
   MatStepperModule,//Descripción de un paso a paso
   MatFormFieldModule,//Construir formularios
   MatInputModule,//Construir campos de entrada
+  MatSelectModule,//Elementos de selección de formularios
 ]
 
 @NgModule({

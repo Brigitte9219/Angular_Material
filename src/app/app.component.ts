@@ -14,6 +14,8 @@ export class AppComponent {
 
   showSpinner = false;
 
+  selectedValue?: string;
+
   log(state: any){
     console.log(state);
   }
