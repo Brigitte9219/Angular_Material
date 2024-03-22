@@ -1,4 +1,43 @@
 <div class="container mt-5">
+  <h1>Stepper - Descripción de un paso a paso</h1>
+
+  <mat-horizontal-stepper linear>
+    <mat-step label="Shipping Address" completed="true">
+      <p>Shipping address details</p>
+    </mat-step>
+    <mat-step label="Billing Address" completed="false" optional>
+      <p>Billing address details</p>
+      <div>
+        <button mat-button matStepperPrevious>Volver</button>
+        <button mat-button matStepperNext>Próximo</button>
+      </div>
+    </mat-step>
+    <mat-step label="Place Order" completed="false">
+      <p>Place order details</p>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+  <mat-divider></mat-divider>
+
+  <mat-vertical-stepper linear>
+    <mat-step label="Shipping Address" completed="true">
+      <p>Shipping address details</p>
+    </mat-step>
+    <mat-step label="Billing Address" completed="false" optional>
+      <p>Billing address details</p>
+      <div>
+        <button mat-button matStepperPrevious>Volver</button>
+        <button mat-button matStepperNext>Próximo</button>
+      </div>
+    </mat-step>
+    <mat-step label="Place Order" completed="false">
+      <p>Place order details</p>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>
+
+<!------------------------------------------------------------------->
+<div class="container mt-5">
   <h1>Tabs - Pestañas</h1>
 
   <mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
