@@ -25,6 +25,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTableModule} from '@angular/material/table';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -52,7 +53,8 @@ const MaterialComponents = [
   MatNativeDateModule,//Fecha nativa
   MatTooltipModule,//punta de herramienta - Funciona como un hover o letreros o indicaciones
   MatSnackBarModule,//Popup
-  MatDialogModule//Dialogo
+  MatDialogModule,//Dialogo
+  MatTableModule//Tabla de datos
 ]
 
 @NgModule({
