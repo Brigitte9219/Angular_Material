@@ -26,6 +26,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -54,7 +55,8 @@ const MaterialComponents = [
   MatTooltipModule,//punta de herramienta - Funciona como un hover o letreros o indicaciones
   MatSnackBarModule,//Popup
   MatDialogModule,//Dialogo
-  MatTableModule//Tabla de datos
+  MatTableModule,//Tabla de datos (Explorar, Filtrar)
+  MatSortModule,//Ordenar o clasificar los datos de la tabla
 ]
 
 @NgModule({
