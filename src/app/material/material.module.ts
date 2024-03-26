@@ -27,6 +27,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -57,6 +58,7 @@ const MaterialComponents = [
   MatDialogModule,//Dialogo
   MatTableModule,//Tabla de datos (Explorar, Filtrar)
   MatSortModule,//Ordenar o clasificar los datos de la tabla
+  MatPaginatorModule,//Paginacion de la tabla
 ]
 
 @NgModule({

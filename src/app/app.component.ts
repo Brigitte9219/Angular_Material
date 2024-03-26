@@ -6,6 +6,7 @@ import { Observable, map, startWith } from 'rxjs';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { MatPaginator } from '@angular/material/paginator';
 
 
 export interface PeriodicElement {
@@ -73,6 +74,8 @@ export class AppComponent {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   @ViewChild(MatSort, { static: true }) sort: MatSort = new MatSort();
+  @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
+
 
 
   constructor(private snackBar: MatSnackBar,
@@ -87,6 +90,7 @@ export class AppComponent {
     );
 
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
   private _filter(value: string): string[] {
