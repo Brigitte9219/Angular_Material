@@ -67,7 +67,7 @@ export class AppComponent {
     return date !== 0 && day !==6;
   }*/
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
   dataSource = ELEMENT_DATA;
 
   constructor(private snackBar: MatSnackBar,
@@ -118,5 +118,9 @@ export class AppComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+  }
+
+  logData(row: any){
+    console.log(row);
   }
 }
