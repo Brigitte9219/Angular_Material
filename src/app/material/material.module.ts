@@ -22,6 +22,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 const MaterialComponents = [
   MatButtonModule,//Botones
@@ -47,6 +49,7 @@ const MaterialComponents = [
   MatRadioModule,//radio botones
   MatDatepickerModule,//Selector de fechas
   MatNativeDateModule,//Fecha nativa
+  MatTooltipModule,//punta de herramienta - Funciona como un hover o letreros o indicaciones
 ]
 
 @NgModule({
