@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable, map, startWith } from 'rxjs';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @Component({
   selector: 'app-root',
@@ -43,7 +45,8 @@ export class AppComponent {
     return date !== 0 && day !==6;
   }*/
 
-  constructor(private snackBar: MatSnackBar){
+  constructor(private snackBar: MatSnackBar,
+              public dialog: MatDialog ){
 
   }
 
@@ -82,5 +85,13 @@ export class AppComponent {
 
   openSnackBar(message: string, action: string | undefined){
     this.snackBar.open(message, action);
+  }
+
+  openDialog(){
+    let dialogRef = this.dialog.open(DialogExampleComponent, {data: {name: 'Vishwas'}});
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }
