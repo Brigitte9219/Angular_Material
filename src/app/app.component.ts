@@ -31,6 +31,17 @@ export class AppComponent {
 
   filteredOptions?: Observable<string[]>;
 
+  //Cuenta los meses iniciando en 0 es decir abril es 3
+  minDate = new Date();
+  maxDate = new Date (2024, 3, 10);//disponibilidad de fechas hasta el 10 de abril
+
+  /*
+  Se usa para filtrar las fechas
+  dateFilter = date => {
+    const day = date.getDay();
+    return date !== 0 && day !==6;
+  }*/
+
   ngOnInit(){
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
