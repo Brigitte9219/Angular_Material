@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable, map, startWith } from 'rxjs';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+import { MatTableDataSource } from '@angular/material/table';
 
 
 export interface PeriodicElement {
@@ -68,7 +69,7 @@ export class AppComponent {
   }*/
 
   displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
-  dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   constructor(private snackBar: MatSnackBar,
               public dialog: MatDialog ){
@@ -122,5 +123,10 @@ export class AppComponent {
 
   logData(row: any){
     console.log(row);
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }
