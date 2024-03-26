@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable, map, startWith } from 'rxjs';
 
 @Component({
@@ -42,6 +43,10 @@ export class AppComponent {
     return date !== 0 && day !==6;
   }*/
 
+  constructor(private snackBar: MatSnackBar){
+
+  }
+
   ngOnInit(){
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
@@ -73,5 +78,9 @@ export class AppComponent {
 
   logChange(index: any){
     console.log(index);
+  }
+
+  openSnackBar(message: string, action: string | undefined){
+    this.snackBar.open(message, action);
   }
 }
